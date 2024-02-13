@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Students</title>
+  </head>
+  <body>
+    <div class="bgcolor open_form"></div>
+
+    <form class="modal_form open_form">
+      <div class="form__title_box">
+        <h2 class="form__title">Student information</h2>
+        <i
+          class="fa-solid fa-xmark fa-xl"
+          style="color: #666666; cursor: pointer"
+        ></i>
+      </div>
+
+      <div class="search_box same__style">
+        <label for="firstname">Firstname:</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Firstname"
+          class="form_same_style"
+          required
+        />
+      </div>
+
+      <div class="search_box same__style">
+        <label for="lastname">Lastname:</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Lastname"
+          class="form_same_style"
+          required
+        />
+      </div>
+
+      <div class="search_box same__style">
+        <label for="address">Address</label>
+        <select name="position" id="address" class="form_same_style">
+          <option value="Tashkent">Tashkent</option>
+          <option value="Fergana">Fergana</option>
+        </select>
+      </div>
+
+      <div class="inputs_box">
+        <div class="search_box same__style">
+          <label for="birthday">Birthday</label>
+          <input
+            type="date"
+            name="birthday"
+            id="birthday"
+            class="form_same_style"
+            required
+          />
+        </div>
+        <div class="search_box same__style">
+          <label for="postion_form">Postion</label>
+          <select name="position" id="position_form" class="form_same_style">
+            <option value="React">React</option>
+            <option value="Go">Go</option>
+            <option value="Python">Python</option>
+            <option value="NodeJs">NodeJs</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="inputs_box">
+        <div class="same__style">
+          <label for="position_type_form">Position type:</label>
+          <select
+            name="position_type_form"
+            id="position_type_form"
+            class="form_same_style"
+          >
+            <option value="Junior">Junior</option>
+            <option value="Middle">Middle</option>
+            <option value="Senior">Senior</option>
+          </select>
+        </div>
+        <div class="same__style">
+          <label for="salary">Salary</label>
+          <input
+            type="number"
+            name="salary"
+            id="salary"
+            class="form_same_style"
+          />
+        </div>
+      </div>
+
+      <div class="isMarried_form_box">
+        <input type="checkbox" name="isMarried_form" id="isMarried_form" />
+        <label for="isMarried_form">isMarried?</label>
+      </div>
+
+      <div class="btn_box">
+        <button type="submit" class="add_btn close_btn">Close</button>
+        <button type="submit" class="add_btn added_data_btn">Add</button>
+      </div>
+
+    </form>
+
+
+    <div class="container hero__container">
+      <div class="hero__filter">
+        <div class="search_box same__style">
+          <label for="search">Search:</label>
+          <input type="text" name="search" id="search" placeholder="F.I.Sh" />
+        </div>
+
+        <div class="position_type__box same__style">
+          <label for="position_type">Position type:</label>
+          <select name="position" id="position_type">
+            <option value="Junior">Junior</option>
+            <option value="Middle">Middle</option>
+            <option value="Senior">Senior</option>
+          </select>
+        </div>
+
+        <div class="isMarried_box same__style">
+          <input type="checkbox" name="isMarried" id="isMarried" />
+          <label for="isMarried">isMarried?</label>
+        </div>
+
+        <div class="salary_box same__style">
+          <label for="salary_sort">Salary:</label>
+          <select name="position" id="salary_sort">
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <button type="submit" class="add_btn open_modal">Add</button>
+      </div>
+
+      <table>
+        <thead>
+          <th>#No</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Address</th>
+          <th>Birthday</th>
+          <th>Position</th>
+          <th>Position type</th>
+          <th>Salary</th>
+          <th>isMarried</th>
+          <th>Activity</th>
+        </thead>
+        <tbody class="json_data"></tbody>
+      </table>
+    </div>
+
+    <script src="./js/home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f8ca3b2196.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
